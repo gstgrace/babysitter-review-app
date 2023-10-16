@@ -12,13 +12,38 @@
 </head>
   
 <body>
-<h1>Every family needs a support system.
-</h1>
-  <h3>Find neighborhood’s favorite babysitters, nannies and caregivers a.k.a your all-round lifesavers.
-  </h3>
-  <button> this is a button! </button>
-  <button> share your story </button>
+
+<!-- Part 1: Navbar Starter Code -->
+
+<div class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#action">Action</a></li>
+    <li><a href="#news">News</a></li>
+  </ul>
+</div>
+
+<!-- Part 2: Flexbox Layout Stater Code -->
+
+<div id="home" class="header-container">
+
+      <div class="header-item"> <!-- Updated class name -->
+        <img id="header-img" src="img/Child Care Header.png" alt="Header Image">
+      </div>
+      
+      <div class="header-item"> <!-- Updated class name -->
+        <h1>Every family needs <br>a support system.</h1>
+        <h2>Child Care is Still in Crisis</h2>
+        <button class="header-button">take action now</button>
+        <button class="header-button">share your story</button>
+      </div>
+      
+    </div>
+
 <!--- About --->
+<section id="about">
 <h2>What's BabyCareHub?</h2>
 <p> 
   The purpose of BabyCareHub.com is to create a platform where low-income women can find reliable and empathetic care providers/volunteers willing to provide low-cost or even free babysitting hours, giving them much-needed respite and support in their caregiving responsibilities 
@@ -26,31 +51,60 @@
 <ul>
   <li>Increasing the availability of affordable baby care</li>
   <li>Expanding child care assistance to more parents</li>
-  <li>To be added!</li>
+  <li>Collectively reimagine child care and garner support</li>
 </ul>
   <iframe width="350" height="200" src="https://www.youtube.com/embed/5bwgF1gBMbw?si=dyMadbmnLuABXmEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  
+</section>
+
+<section id="impact">
   <h2>Impact of BabyCareHub?</h2>
   <img src="img/baby1.jpg" alt="A beautiful baby in her mum's arm" width="450" height="300" />
   <p> 
   The high cost and short supply of quality child care is holding back many working parents with infants and toddlers — especially moms. <b>This is an equity issue. </b> Women with infants and toddlers comprise the greatest percentage of women who leave the workforce due to lack of child care. This reduces not only their earnings today, but their potential earnings and career advancement in the future. 
 </p>
+</section>
+
+<section id="action">
   <h2>Let's Work Together</h2>
   <img src="img/baby2.jpg" alt="A beautiful family" width="450" height="300" />
+  <p> 
+  This is your one-stop-shop for tools and resources to become a child care champion for Sunnyvale’s children. We will update this page so be sure to bookmark it to stay up to date on our most important actions! <b>Below are some more advocacy steps you can take to advance child care right now. </b> 
+    
+</section>
+    <div class="container">
+    <div class="row">
+      <button id="like-btn">❤️</button>
+      <button id="comment-btn">💬</button>
+      <button id="share-btn">💌</button>
+      <button id="like-count">0</button>
+    </div>
+  
+    <div class="row">
+      <p><strong>Click Here</strong> to show support </p>
+    </div>
+  </div>
+  
   <script src="script.js"></script>
 
-  <section id="news">
-    <h2>News for Thought</h2>
-    <article>
-      <h3><a href="https://www.strongnation.org/articles/1687-child-care-is-key-to-new-jersey-s-economic-recovery-from-covid-19">Child Care is Key to Economic Recover from COVID-19</a></h3>
-      <p>A short summary of the first article goes here.</p></article>
-    <article>
-      <h3><a href="https://edsource.org/updates/women-of-color-child-care-providers-face-the-heaviest-burden-report-finds">Why Child Care is an Equity Issue</a></h3>
-      <p>A short summary of the first article goes here.</p></article>
-    
-      
-    
+  <!-- Add a class for the news container -->
+<section id="news" class="news-container">
+  <h2>News for Thought</h2>
+  <article class="news-item">
+    <h3><a href="https://www.strongnation.org/articles/1687-child-care-is-key-to-new-jersey-s-economic-recovery-from-covid-19">Child Care is Key to Economic Recover from COVID-19</a></h3>
+    <p>A short summary of the first article goes here.</p>
+  </article>
+  <article class="news-item">
+    <h3><a href="https://edsource.org/updates/women-of-color-child-care-providers-face-the-heaviest-burden-report-finds">Why Child Care is an Equity Issue</a></h3>
+    <p>A short summary of the first article goes here.</p>
+  </article>
+</section>
 
+  <div class="footer">
+        <a href="https://www.example.com">Email our Team</a>
+        <a href="https://www.example.com">Learn More</a>
+    </div>
+      
+  
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
@@ -58,6 +112,7 @@
   -->
   
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
 </body>
 
 </html>
