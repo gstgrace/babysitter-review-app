@@ -12,3 +12,18 @@ const addLike = () => {
 likeButton.addEventListener('click', addLike)
 
 
+const form = document.getElementById('songRequests');// Add JavaScript code here
+
+const printSong = (event) => {
+  // Get the name of the requester
+  let name = document.getElementById('name').value;
+
+  // Print the name
+  console.log(name);
+
+  // Prevent default behavior
+  event.preventDefault();
+}
+
+form.addEventListener('submit', printSong);
+
