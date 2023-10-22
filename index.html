@@ -22,6 +22,7 @@
     <li><a href="#impact">Impact</a></li>
     <li><a href="#action">Action</a></li>
     <li><a href="#news">News</a></li>
+    <li ><button id="theme-button">Toggle Dark Mode</button></li>
   </ul>
 </div>
 
@@ -36,8 +37,8 @@
       <div class="header-item"> <!-- Updated class name -->
         <h1>Every family needs <br>a support system.</h1>
         <h2>Child Care is Still in Crisis</h2>
-        <button class="header-button">take action now</button>
-        <button class="header-button">share your story</button>
+        <button class="header-button">Take action now</button>
+        <button class="header-button">Share your story</button>
       </div>
       
     </div>
@@ -62,6 +63,42 @@
   <p> 
   The high cost and short supply of quality child care is holding back many working parents with infants and toddlers — especially moms. <b>This is an equity issue. </b> Women with infants and toddlers comprise the greatest percentage of women who leave the workforce due to lack of child care. This reduces not only their earnings today, but their potential earnings and career advancement in the future. 
 </p>
+  
+  <div class="petition" id="petition">
+
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+
+        <div class="petition-para">
+          Now that you have joined the campaign, help us advocate for changes by signing this petition. There is strength in numbers. Let’s show our county leaders Sunnyvale people support having accessible, quality child care available for all families that need it. Your support will directly help in our advocacy efforts to build an equitable, accessible, high-quality child care system that works for all Sunnyvale families.
+        </div>
+
+        <div class="signatures">
+          <p>🖊️ DJ from Brooklyn supports this.</p>
+          <p>🖊️ Amy from Queens supports this.</p>
+          <p>🖊️ Teresa from Harlem supports this.</p>
+          <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+        </div>
+
+      </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label>Name：</label>
+      <input type =“text” id="name" placeholder= Name for="name">
+      <label>Hometown: </label>
+      <input type =“text” id="hometown" placeholder= Hometown for="hometown">
+      <label>Email: </label>
+      <input type =“text” id="email" placeholder= Email for="email">
+      
+    </form>
+
+     <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+  
 </section>
 
 <section id="action">
@@ -80,28 +117,32 @@
     </div>
   
     <div class="row">
-      <p><strong>Click Here</strong> to show support </p>
-    </div>
+      <p><strong>1. Click the heart</strong> to show your support </p>
+      <p><strong>2. Share Your </strong> child care story </p>
+      <p><strong>3. Volunteer </strong> for an upcoming event </p>
+      </div>
   </div>
   
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 
+
+  
   <!-- Add a class for the news container -->
 <section id="news" class="news-container">
   <h2>News for Thought</h2>
   <article class="news-item">
     <h3><a href="https://www.strongnation.org/articles/1687-child-care-is-key-to-new-jersey-s-economic-recovery-from-covid-19">Child Care is Key to Economic Recover from COVID-19</a></h3>
-    <p>A short summary of the first article goes here.</p>
+    <p>"The COVID-19 pandemic has disproportionately impacted women’s employment, with female workforce participation at its lowest rate in more than 30 years......"</p>
   </article>
   <article class="news-item">
     <h3><a href="https://edsource.org/updates/women-of-color-child-care-providers-face-the-heaviest-burden-report-finds">Why Child Care is an Equity Issue</a></h3>
-    <p>A short summary of the first article goes here.</p>
+    <p>The pandemic may have worsened equity issues in the child care sector. That’s one of the takeaways in a new report......</p>
   </article>
 </section>
 
   <div class="footer">
-        <a href="https://www.example.com">Email our Team</a>
-        <a href="https://www.example.com">Learn More</a>
+        <a href="https://www.example.com">Email our team</a>
+        <a href="https://www.example.com">Learn more</a>
     </div>
       
   
@@ -113,6 +154,7 @@
   
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 
+  <script src="index.js"></script>
 </body>
 
 </html>
