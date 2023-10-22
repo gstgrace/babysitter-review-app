@@ -78,6 +78,53 @@ body {
     background-color: #f0f0f0; 
 }
 
+/* Add style to button */
+#theme-button {
+    text-decoration: none; /* Remove any default underlines */
+    font-family: 'Georgia', serif; /* Change the font to a warm, inviting font */
+    color: #ffffff; /* Set a warm color for the text (in this case, a shade of red-orange) */
+    background-color: #fca103; /* Set a warm background color (in this case, gold) */
+    padding: 10px 20px; /* Add some padding to increase the clickable area */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+
+}
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: #262626;
+  color: #ffffff;
+  
+}
+
+/* Add style for paragraphs in dark mode */
+.dark-mode p {
+  color: #ffffff; /* Change to desired text color in dark mode */
+}
+
+/* Add style for navbar in dark mode */
+.dark-mode .navbar {
+  background-color: #262626; /* Change to desired background color in dark mode */
+  color: #ffffff; /* Change to desired text color in dark mode */
+  
+}
+
+.dark-mode .navbar ul li {
+  margin: 10px;
+  color: #ffffff; /* Change to desired text color in dark mode */
+}
+
+/* Style for individual li link in navbar in dark mode */
+.dark-mode .navbar ul li a {
+  color: #ffffff; /* Change to desired link color in dark mode */
+}
+
+/* Style for hovered link in navbar in dark mode */
+.dark-mode .navbar ul li a:hover {
+  background-color: #555555; /* Change to desired background color on hover in dark mode */
+}
+
 
 /* Part 2: Flexbox */
 
@@ -128,6 +175,30 @@ body {
   border: 2px solid #FF4500; /* Added border */
   margin-bottom: 20px; 
   padding: 10px 20px;
+}
+
+/* Add a style rule for the .petition-para container */
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+.petition h2 {
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.signatures {
+    width: 45%;
+    padding-right: 10px;
 }
 
 
@@ -298,6 +369,16 @@ ul li {
   float:right;
   width:35px;
   font: 'Avenir';
+}
+
+.error {
+  border-style: solid;
+  border-width: 4px; /* Making the border thicker */
+  border-color: red;
+  background: pink;
+  color: red; /* Set text color to red */
+  font-weight: bold; /* Make text bold */
+  padding: 8px; /* Add some padding to give more space around the input */
 }
 
 /* button {
