@@ -7,10 +7,7 @@ html {
 section {
   padding-top: 70px; /* Adjust this value to match the navbar height */
 }
-/*
-  Add style rules for the body of a your webpage.
-  Note: These rules will be applied to all elements.
-*/
+
 body {
 
     /* Add a background color or image */
@@ -379,21 +376,80 @@ ul li {
   color: red; /* Set text color to red */
   font-weight: bold; /* Make text bold */
   padding: 8px; /* Add some padding to give more space around the input */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Add a red shadow around the input */
 }
 
-/* button {
-  width: 50px;
-  height: 40px;
-  font-size: 25px;
+/* CSS rules for revealable class */
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
 }
- */
-/* button {
-  background-color:  #008CBA;
-  border: none;
-  color: white;
-  font-size: 16px;
+
+/* CSS rules for active class */
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* The modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* Hides the modal from view by default */
+  position: fixed; /* Keeps the modal in one place */
+  z-index: 2; /* Positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* These flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* Update the colors and font sizes as you like */
+  color: black;
   text-align: center;
-  padding: 15px 32px;
-  cursor: pointer;
+  font-size: 3rem;
+  display: flex; /* Adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
 }
- */
+
+#thanks-modal-content {
+  width: 20rem; /* Sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* Adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content img {
+    width: 40%; /* Initial width smaller than max-width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 50%; /* Ensures the image is not larger than the modal */
+    max-height: 70vh; /* Adjust this to fit within the viewport height */
+    margin: 15px 0; /* Adds some space above and below the image */
+    transition: transform 0.5s ease; /* Smooth transition for scaling effect */
+}
+
+#close-modal-btn {
+    padding: 10px 20px;
+    background-color: #f44336; /* Red color, you can change it */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#close-modal-btn:hover {
+    background-color: #d32f2f; /* Darker shade for hover state */
+}
