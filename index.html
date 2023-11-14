@@ -44,7 +44,7 @@
     </div>
 
 <!--- About --->
-<section id="about">
+<section id="about" class="revealable">
 <h2>What's BabyCareHub?</h2>
 <p> 
   The purpose of BabyCareHub.com is to create a platform where low-income women can find reliable and empathetic care providers/volunteers willing to provide low-cost or even free babysitting hours, giving them much-needed respite and support in their caregiving responsibilities 
@@ -57,14 +57,14 @@
   <iframe width="350" height="200" src="https://www.youtube.com/embed/5bwgF1gBMbw?si=dyMadbmnLuABXmEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 
-<section id="impact">
+<section id="impact" class="revealable">
   <h2>Impact of BabyCareHub?</h2>
   <img src="img/baby1.jpg" alt="A beautiful baby in her mum's arm" width="450" height="300" />
   <p> 
   The high cost and short supply of quality child care is holding back many working parents with infants and toddlers — especially moms. <b>This is an equity issue. </b> Women with infants and toddlers comprise the greatest percentage of women who leave the workforce due to lack of child care. This reduces not only their earnings today, but their potential earnings and career advancement in the future. 
 </p>
   
-  <div class="petition" id="petition">
+  <div class="revealable" class="petition" id="petition">
 
       <h2>Sign Our Petition 📢</h2>
       <div class="petition-container">
@@ -122,8 +122,6 @@
       <p><strong>3. Volunteer </strong> for an upcoming event </p>
       </div>
   </div>
-  
-  <script src="index.js"></script>
 
 
   
@@ -140,11 +138,26 @@
   </article>
 </section>
 
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- Text here -->
+        <p id="thanks-modal-content">Thank you for your support!</p>
+        <button id="close-modal-btn">Close</button>
+      </div>
+      <img src="img/Thank you.jpg" alt="Celebration Image">
+    </div>
+  </div>
+
+
   <div class="footer">
         <a href="https://www.example.com">Email our team</a>
         <a href="https://www.example.com">Learn more</a>
     </div>
       
+
   
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
